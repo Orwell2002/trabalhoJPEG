@@ -1,4 +1,12 @@
-# JPEG Image Compression
+# Trabalho Final - Processamento de sinais
+
+Insituto Federal de Minas Gerais - IFMG - Campus Betim
+
+Gabriel Keven Domingues de Souza - RA: 0056232
+
+Victor Hugo Bittencourt - RA: 0055966
+
+## Introdução
 
 Este projeto implementa um codec de compressão JPEG básico, utilizando técnicas como Transformada Discreta do Cosseno (DCT), quantização, e codificação de Huffman. O objetivo é fornecer uma implementação prática dos principais componentes do processo de compressão JPEG.
 
@@ -6,11 +14,8 @@ Este projeto implementa um codec de compressão JPEG básico, utilizando técnic
 
 1. [Visão Geral](#visão-geral)
 2. [Pré-requisitos](#pré-requisitos)
-3. [Estrutura do Projeto](#estrutura-do-projeto)
-4. [Como Usar](#como-usar)
-5. [Exemplos](#exemplos)
-6. [Contribuição](#contribuição)
-7. [Licença](#licença)
+3. [Como Usar](#como-usar)
+4. [Exemplos](#exemplos)
 
 ## Visão Geral
 
@@ -36,16 +41,6 @@ Você pode instalar essas dependências usando o pip:
 pip install numpy matplotlib bitstream huffman
 ```
 
-## Estrutura do Projeto
-
-O projeto é estruturado da seguinte forma:
-
-- `compressao_jpeg.py`: Contém a implementação principal do codec JPEG.
-- `quantizacao.py`: Define a função de quantização e as matrizes utilizadas.
-- `codificacao_huffman.py`: Implementa a codificação de Huffman.
-- `testes.py`: Scripts de teste para verificar a funcionalidade do codec.
-- `exemplos/`: Pasta com imagens de exemplo e scripts para visualização.
-
 ## Como Usar
 
 1. **Carregar a Imagem**: Carregue a imagem que deseja comprimir.
@@ -55,21 +50,8 @@ O projeto é estruturado da seguinte forma:
 5. **Codificar com Huffman**: Codifique os dados quantizados com Huffman.
 6. **Salvar como Arquivo JPEG**: Escreva o arquivo JPEG com os dados comprimidos.
 
-**Exemplo de uso**:
+## Exemplos
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from compressao_jpeg import compressao_jpeg
+![image](https://github.com/user-attachments/assets/73960f4c-c985-48d9-b0f7-290c4db1df30)
 
-# Carregar imagem
-imagem = plt.imread('imagem_exemplo.png')
-
-# Compressão JPEG
-jpeg_data = compressao_jpeg(imagem, qualidade=95)
-
-# Salvar imagem JPEG
-with open('imagem_comprimida.jpg', 'wb') as f:
-    f.write(jpeg_data)
-```
 
